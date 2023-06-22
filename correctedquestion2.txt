@@ -1,0 +1,25 @@
+#include <stdio.h>
+
+
+
+void main()
+{
+    int noofrows=8,c=1,h,i,j;
+
+    for(i=0;i<noofrows;i++)
+    {
+        for(h=1;h<=noofrows-i;h++)
+        printf("  ");
+        for(j=0;j<=i;j++)
+        {
+            if (j==0||i==0)
+                c=1;
+            else
+               c=c*(i-j+1)/j;
+            printf("% 4d",c);
+        }
+        printf("\n");
+    }
+
+    return 0;
+}

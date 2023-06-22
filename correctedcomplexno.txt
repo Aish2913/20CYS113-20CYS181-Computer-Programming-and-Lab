@@ -1,0 +1,31 @@
+#include <stdio.h>
+
+struct complexno {
+    int imagno1;
+    int realno1;
+    int imagno2;
+    int realno2;
+};
+
+int main() {
+    struct complexno compno;
+
+    printf("Enter real part of first complex number: ");
+    scanf("%d", &compno.realno1);
+
+    printf("Enter imaginary part of first complex number: ");
+    scanf("%d", &compno.imagno1);
+
+    printf("Enter real part of second complex number: ");
+    scanf("%d", &compno.realno2);
+
+    printf("Enter imaginary part of second complex number: ");
+    scanf("%d", &compno.imagno2);
+
+    int realno = (compno.realno1 * compno.realno2) - (compno.imagno1 * compno.imagno2);
+    int imagno = (compno.realno1 * compno.imagno2) + (compno.imagno1 * compno.realno2);
+
+    printf("Result: %d + %di\n", realno, imagno);
+
+    return 0;
+}
