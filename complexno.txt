@@ -1,0 +1,24 @@
+#include <stdio.h>
+
+
+    struct complexno{
+        int imagno1;
+        int realno1;
+        int imagno2;
+        int realno2;
+
+    } compno;
+    int main() {
+        compno;
+        scanf("%d",&realno1.compno);
+        scanf("%d",&imagno1.compno);
+        scanf("%d",&realno2.compno);
+        scanf("%d",&imagno2.compno);
+        int realno=realno1*realno2;
+        int imagno=imagno1*imagno2;
+     printf("%d"+i"%d",realno,imagno);
+
+
+
+    return 0;
+}
